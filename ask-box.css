@@ -1,0 +1,7 @@
+.ask-box{display:grid;gap:1rem;width:min(100%,44rem);font:inherit}
+.ask-box h2,.ask-box p{margin:0}.ask-box label{display:grid;gap:.5rem}
+.ask-box textarea{box-sizing:border-box;width:100%;font:inherit;padding:.75rem;border:1px solid var(--neutral-stroke,#777);border-radius:.6rem;background:var(--surface,Canvas);color:var(--text,CanvasText)}
+.ask-box button{justify-self:start;padding:.5rem .9rem;font:inherit;border:1px solid var(--neutral-stroke,#777);border-radius:.45rem;color:var(--text,CanvasText);background:var(--surface,Canvas)}
+.ask-box button:not(:disabled){cursor:pointer}
+.ask-box button[aria-pressed=true]{color:var(--accent-ink,HighlightText);background:var(--accent,Highlight)}
+.ask-shortcuts{display:flex;gap:.5rem;flex-wrap:wrap}.ask-box :focus-visible{outline:3px solid var(--accent,#465cd7);outline-offset:2px}
