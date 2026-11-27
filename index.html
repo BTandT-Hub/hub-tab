@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BT&amp;T Hub</title><link rel="stylesheet" href="./hub.css"><link rel="stylesheet" href="./ask-box.css"></head>
-<body><a class="skip" href="#view">Skip to content</a><header><div><span class="overline">BALLARAT TRAILERS &amp; TOWBARS</span><h1>Second Shift</h1></div><p id="session" role="status">Microsoft access not connected</p></header>
-<nav aria-label="Hub views"><a href="#today">Today</a><a href="#needs">Needs you</a><a href="#takings">Daily Take</a><a href="#orders">POs</a></nav>
-<main><section id="view" aria-labelledby="view-title" tabindex="-1"></section><aside id="ask" aria-label="Ask AI Desk"></aside></main>
+<title>BT&amp;T Hub</title><link rel="stylesheet" href="./hub.css"></head>
+<body><a class="skip" href="#view">Skip to content</a><header><div><span class="overline">BALLARAT TRAILERS &amp; TOWBARS</span><h1>Second Shift</h1></div><div><p id="session" role="status">Checking Microsoft access…</p><button id="refresh" type="button" hidden>Refresh</button></div></header>
+<nav aria-label="Hub views"><a href="#today">Today</a><a href="#needs">Needs you</a></nav>
+<main class="read-only"><section id="view" aria-labelledby="view-title" tabindex="-1"></section></main>
+<script src="https://res.cdn.office.net/teams-js/2.57.0/js/MicrosoftTeams.min.js" integrity="sha384-wI+6jxWlHa8aibQ/NmnIWGj7xoMU4QuKf8DV9b03tgsSA6nTYsaIntp5lO8DmTpM" crossorigin="anonymous" defer></script>
+<script src="./vendor/msal-browser.min.js" defer></script>
 <script type="module" src="./hub.mjs"></script></body></html>
