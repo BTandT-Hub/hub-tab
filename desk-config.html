@@ -1,0 +1,16 @@
+<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><title>AI Desk watch</title>
+<script src="https://res.cdn.office.net/teams-js/2.24.0/js/MicrosoftTeams.min.js" crossorigin="anonymous"></script></head>
+<body style="font-family:system-ui,sans-serif;padding:1rem">
+<p>Adds the AI Desk watch to this channel, so PlexBox can read new posts here and pick them up in seconds. Press Save.</p>
+<script>
+microsoftTeams.app.initialize().then(() => {
+  microsoftTeams.pages.config.registerOnSaveHandler(e => {
+    microsoftTeams.pages.config.setConfig({
+      entityId: "ai-desk-watch", suggestedDisplayName: "Desk watch",
+      contentUrl: "https://btandt-hub.github.io/hub-tab/desk.html",
+      websiteUrl: "https://btandt-hub.github.io/hub-tab/"
+    }).then(() => e.notifySuccess());
+  });
+  microsoftTeams.pages.config.setValidityState(true);
+});
+</script></body></html>
